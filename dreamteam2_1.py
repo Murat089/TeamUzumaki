@@ -166,6 +166,19 @@
 # Напишите функцию который будет конвертировать Фаренгейт в Цельсии и
 # наоборот.
 
+def convert(x):
+    tf=(9/5)*x+32
+    return tf
+while True:
+     tc=input('Температура в Цельсиях: ')
+     if tc=='':
+         break #или exit()
+     else :
+         tc=int(tc)
+     tf=convert(tc)
+     print('tem в цельсиях',tc,'tem в фаренгейтах',tf)
+
+
 
 
 # Задание 13:
